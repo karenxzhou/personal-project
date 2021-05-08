@@ -17,7 +17,42 @@ h1 {
     font-size: 50pt;
     font-style: normal;
     text-align: center;
+    padding-top: 20px;
     color: rgba(235,0,139,1);
+    animation-name: colors;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 0s;
+    animation-direction: normal;
+    animation-play-state: running;
+}
+
+@keyframes colors {
+    0% {
+        color: rgba(235,0,139,1);
+    }
+
+    20% {
+        color: rgba(155,24,230,1);
+    }
+
+    40% {
+        color: salmon;
+    }
+
+    60% {
+        color: slategray;
+    }
+
+    80% {
+        color: blue;
+    }
+
+    100% {
+        color: rgba(235,0,139,1);
+    }
+
 }
 
 p{
@@ -41,11 +76,11 @@ p{
 }
 
 #hover {
-    width: 300px;
+    width: 600px;
     height: 174px;
     position: relative;
     justify-content: center;
-    margin-left: 530px;
+    left: 400px;
 }
 
 #main text {
@@ -64,25 +99,96 @@ p{
     padding-left: 20px;
     width: 90px;
     height: 70px;
-    position: relative;
+    /* position: relative;
     margin-left: 60px;
-    float: left;
+    float: left; */
+    position: absolute;
+    left: 60px;
+    top: 50px;
 }
 
 .window {
-    position: relative;
+    /* position: relative;
     z-index: -5;
     float: right;
     margin-right: 300px;
-    margin-top: 50px;
+    margin-top: 50px; */
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 400px;
+    height: 300px;
+    background: url("SVG/window.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.window:hover {
+    background: url("SVG/window2.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .frame {
-    position: relative;
+    /* position: relative;
     margin-top: 70px;
-    margin-left: 400px;
+    margin-left: 400px; */
+    position: absolute;
+    top: 200px;
+    left: 330px;
+    width: 225px;
+    height: 200px;
+    background: url("SVG/frame.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.frame:hover {
+    /* position: absolute;
+    top: 0;
+    left 0; */
+    background: url("SVG/frame2.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .rug {
-    position: relative;
+    position: absolute;
+    top: 80%;
+    left: 27%;
+    width: 700px;
+    height: 200px;
+    background: url("SVG/rug.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
 }
+
+.rug:hover {
+    background: url("SVG/rug2.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/* .rug {
+    position: relative;
+    margin-top: 140px;
+    margin-left: 370px;
+} */
+
+/* .window2 {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+} */
+
+/* try this with javascript later */
+/* .bunny {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50px;
+    height: 40px;
+    background: url("SVG/bunnies.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
