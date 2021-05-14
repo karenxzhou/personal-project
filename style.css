@@ -169,6 +169,12 @@ p{
     background-repeat: no-repeat;
 }
 
+audio {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
 /* .rug {
     position: relative;
     margin-top: 140px;
@@ -192,3 +198,115 @@ p{
     background-size: contain;
     background-repeat: no-repeat;
 } */
+
+.bunnies {
+    position: absolute;
+    top: 660px;
+    left: 420px;
+    width: 50px;
+    height: 40px;
+    background: url("SVG/no-bunnies.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bunnies:hover {
+    background: url("SVG/bunnies.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bookshelf {
+    position: absolute;
+    top: 235px;
+    right: 35px;
+    width: 300px;
+    height: 400px;
+    background: url("SVG/bookshelf.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#interest {
+    width: 600px;
+    height: 174px;
+    position: relative;
+    justify-content: center;
+    left: 540px;
+}
+
+/* .center-bookshelf {
+    position: absolute;
+    top: 25%;
+    left: 36%;
+    width: 400px;
+    height: 700px;
+    background: url("SVG/bookshelf.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+} */
+
+/* #set1 {
+    background: url("SVG/no-bunnies.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#set1:hover {
+    background: url("SVG/set1\ copy.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30.2%;
+    left: 37.33%;
+    width: 110px;
+    height: 110px;
+} */
+
+.flip-shelf {
+    background-color: transparent;
+    width: 400px;
+    height: 480px;
+    perspective: 1000px;
+    position: absolute;
+    top: 25%;
+    left: 36%;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-shelf:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front {
+    background-color: #bbb;
+    color: black;
+}
+
+.flip-card-back {
+    background-color: rgba(154,108,255,1);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+h3 {
+    width: 400px;
+    height: 100px;
+    padding-top: 30px;
+}
