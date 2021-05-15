@@ -83,29 +83,26 @@ p{
     left: 400px;
 }
 
-#main text {
+/* #main text {
     color: rgba(235,0,139,1);
     font-family: soleil, sans-serif;
     font-weight: 700;
     font-style: normal;
     z-index: -10;
     text-align: center;
-}
+} */
 
-#main {
+/* #main {
     background-color: white;
     opacity: 50%;
     padding-top: 20px;
     padding-left: 20px;
     width: 90px;
     height: 70px;
-    /* position: relative;
-    margin-left: 60px;
-    float: left; */
     position: absolute;
     left: 60px;
     top: 50px;
-}
+} */
 
 .window {
     /* position: relative;
@@ -205,15 +202,16 @@ audio {
     left: 420px;
     width: 50px;
     height: 40px;
-    background: url("SVG/no-bunnies.svg");
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.bunnies:hover {
     background: url("SVG/bunnies.svg");
     background-size: contain;
     background-repeat: no-repeat;
+    opacity: 0;
+    transition: left 5s ease-in;
+}
+
+.bunnies.moving {
+    left: -50px;
+    opacity: 1;
 }
 
 .bookshelf {
@@ -223,6 +221,12 @@ audio {
     width: 300px;
     height: 400px;
     background: url("SVG/bookshelf.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bookshelf:hover {
+    background: url("SVG/bookshelf\ copy.svg");
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -307,6 +311,38 @@ audio {
 
 h3 {
     width: 400px;
-    height: 100px;
-    padding-top: 30px;
+    height: 50px;
+    padding-top: 20px;
+}
+
+.button {
+    background: rgb(57, 26, 141);
+    color: white;
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.menu {
+    background: rgba(255,255,255, 0.5);
+    color: rgba(235,0,139,1);
+    font-family: soleil, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    text-align: center;
+    padding-top: 22px;
+    padding-left: 10px;
+    width: 90px;
+    height: 70px;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.menu:hover {
+    background: rgba(235,0,139,1);
+    color: white;
 }
