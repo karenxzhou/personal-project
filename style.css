@@ -78,9 +78,10 @@ p{
 #hover {
     width: 600px;
     height: 174px;
-    position: relative;
+    position: absolute;
     justify-content: center;
-    left: 400px;
+    top: 100px;
+    left: 450px;
 }
 
 /* #main text {
@@ -200,8 +201,8 @@ audio {
     position: absolute;
     top: 660px;
     left: 420px;
-    width: 50px;
-    height: 40px;
+    width: 100px;
+    height: 80px;
     background: url("SVG/bunnies.svg");
     background-size: contain;
     background-repeat: no-repeat;
@@ -210,7 +211,7 @@ audio {
 }
 
 .bunnies.moving {
-    left: -50px;
+    left: -100px;
     opacity: 1;
 }
 
@@ -234,9 +235,10 @@ audio {
 #interest {
     width: 600px;
     height: 174px;
-    position: relative;
+    position: absolute;
     justify-content: center;
-    left: 540px;
+    top: 100px;
+    left: 600px;
 }
 
 /* .center-bookshelf {
@@ -345,4 +347,128 @@ h3 {
 .menu:hover {
     background: rgba(235,0,139,1);
     color: white;
+}
+
+.ghostContainer {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+
+}
+
+.ghost {
+    animation: float 3s ease-out infinite;
+    cursor: pointer;
+}
+
+@keyframes float {
+    50% {
+        transform: translate(0, 20px);
+    }
+}
+
+/* .shadowFrame {
+    width: 100px;
+    margin-top: 15px;
+}
+
+.ghostShadow {
+    animation: shrink 3s ease-out infinite;
+    transform-origin: center center; 
+    ellipse {
+        transform-origin: center center;
+    }
+} */
+
+/* @keyframes shrink {
+    0% {
+        width: 90%;
+        margin: 0 5%;
+    }
+    50% {
+        width: 60%;
+        margin: 0 18%;
+    }
+    100% {
+        width: 90%;
+        margin: 0 5%;
+    }
+} */
+
+#choose {
+    width: 600px;
+    height: 74px;
+    position: absolute;
+    justify-content: center;
+    top: 100px;
+    left: 610px;
+}
+
+.ghostContainer2 {
+    position: absolute;
+    top: 25%;
+    left: 36%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.ghostContainer2.pink {
+    opacity: 1;
+}
+
+nav {
+    top: 0;
+    left: 700px;
+    position: absolute;
+}
+
+.ghostButton {
+    background:rgb(57, 26, 141);
+    color: white;
+    padding: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin-top: 5px;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    float: center;
+}
+
+.ghostButton.changed {
+    background: rgba(235,0,139,1);
+}
+
+.bigGhost {
+    /* background: url("SVG/ghost.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 480px;
+    opacity: 0.5; */
+    animation: float 3s ease-out infinite;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.ghost.darkpink {
+    animation: float 3s ease-out infinite;
+    cursor: pointer;
+    
+    position: absolute;
+    
+}
+
+/* .bigGhost.pink {
+    opacity: 1;
+    
+} */
+.image-container {
+    width: 50%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.image-container.showing {
+    opacity: 1;
 }
