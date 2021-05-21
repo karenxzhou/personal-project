@@ -21,34 +21,98 @@ $(document).ready(function() {
 
     function makePink() {
         $(".image-container2").toggleClass("showing");
+
+        $(".image-container3").removeClass("showing");
+        $(".image-container4").removeClass("showing");
+        $(".image-container5").removeClass("showing");
+        $(".image-container6").removeClass("showing");
+        $(".image-container7").removeClass("showing");
+        $(".image-container8").removeClass("showing");
+        $("image-container9").removeClass("showing");
     }
 
     function makeDarkpink() {
         $(".image-container3").toggleClass("showing");
+
+        $(".image-container2").removeClass("showing");
+        $(".image-container4").removeClass("showing");
+        $(".image-container5").removeClass("showing");
+        $(".image-container6").removeClass("showing");
+        $(".image-container7").removeClass("showing");
+        $(".image-container8").removeClass("showing");
+        $("image-container9").removeClass("showing");
     }
 
     function makeRed() {
         $(".image-container4").toggleClass("showing");
+
+        $(".image-container2").removeClass("showing");
+        $(".image-container3").removeClass("showing");
+        $(".image-container5").removeClass("showing");
+        $(".image-container6").removeClass("showing");
+        $(".image-container7").removeClass("showing");
+        $(".image-container8").removeClass("showing");
+        $("image-container9").removeClass("showing");
     }
 
     function makeOrange() {
         $(".image-container5").toggleClass("showing");
+
+        $(".image-container2").removeClass("showing");
+        $(".image-container3").removeClass("showing");
+        $(".image-container4").removeClass("showing");
+        $(".image-container6").removeClass("showing");
+        $(".image-container7").removeClass("showing");
+        $(".image-container8").removeClass("showing");
+        $("image-container9").removeClass("showing");
     }
 
     function makeYellow() {
         $(".image-container6").toggleClass("showing");
+
+        $(".image-container2").removeClass("showing");
+        $(".image-container3").removeClass("showing");
+        $(".image-container4").removeClass("showing");
+        $(".image-container5").removeClass("showing");
+        $(".image-container7").removeClass("showing");
+        $(".image-container8").removeClass("showing");
+        $("image-container9").removeClass("showing");
     }
 
     function makeGreen() {
         $(".image-container7").toggleClass("showing");
+
+        $(".image-container2").removeClass("showing");
+        $(".image-container3").removeClass("showing");
+        $(".image-container4").removeClass("showing");
+        $(".image-container5").removeClass("showing");
+        $(".image-container6").removeClass("showing");
+        $(".image-container8").removeClass("showing");
+        $("image-container9").removeClass("showing");
     }
 
     function makeBlue() {
         $(".image-container8").toggleClass("showing");
+
+        $(".image-container2").removeClass("showing");
+        $(".image-container3").removeClass("showing");
+        $(".image-container4").removeClass("showing");
+        $(".image-container5").removeClass("showing");
+        $(".image-container6").removeClass("showing");
+        $(".image-container7").removeClass("showing");
+        $("image-container9").removeClass("showing");
     }
 
     function makePurple() {
         $(".image-container9").toggleClass("showing");
+
+        $(".image-container2").removeClass("showing");
+        $(".image-container3").removeClass("showing");
+        $(".image-container4").removeClass("showing");
+        $(".image-container5").removeClass("showing");
+        $(".image-container6").removeClass("showing");
+        $(".image-container7").removeClass("showing");
+        $(".image-container8").removeClass("showing");
     }
 
     function changeBackground() {

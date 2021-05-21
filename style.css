@@ -417,8 +417,8 @@ h3 {
 }
 
 nav {
-    top: 0;
-    left: 700px;
+    top: 140px;
+    right: 200px;
     position: absolute;
 }
 
@@ -483,8 +483,8 @@ nav {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 175px;
+    left: 350px;
     animation: float 3s ease-out infinite;
     cursor: pointer;
 }
@@ -504,8 +504,8 @@ nav {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 175px;
+    left: 350px;
     animation: float 3s ease-out infinite;
     cursor: pointer;
 }
@@ -525,8 +525,8 @@ nav {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 175px;
+    left: 350px;
     animation: float 3s ease-out infinite;
     cursor: pointer;
 }
@@ -546,8 +546,8 @@ nav {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 175px;
+    left: 350px;
     animation: float 3s ease-out infinite;
     cursor: pointer;
 }
@@ -567,8 +567,8 @@ nav {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 175px;
+    left: 350px;
     animation: float 3s ease-out infinite;
     cursor: pointer;
 }
@@ -588,8 +588,8 @@ nav {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 175px;
+    left: 350px;
     animation: float 3s ease-out infinite;
     cursor: pointer;
 }
@@ -609,8 +609,8 @@ nav {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 175px;
+    left: 350px;
     animation: float 3s ease-out infinite;
     cursor: pointer;
 }
@@ -630,8 +630,8 @@ nav {
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 175px;
+    left: 350px;
     animation: float 3s ease-out infinite;
     cursor: pointer;
 }
